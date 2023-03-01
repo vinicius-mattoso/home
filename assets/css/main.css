@@ -2142,7 +2142,8 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 25%;
+				border-radius: 5%;
+				/* border-radius: 1.5em; */
 				width: 100%;
 			}
 
@@ -2593,7 +2594,8 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
+		background-image: url("images/overlay.png"), url("../../images/my_files/background_01.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
