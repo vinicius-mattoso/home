@@ -2073,7 +2073,8 @@ input, select, textarea {
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'View';
+				/* content: 'View'; */
+				content: 'Preview';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2142,7 +2143,8 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
+				border-radius: 5%;
+				/* border-radius: 1.5em; */
 				width: 100%;
 			}
 
@@ -2551,6 +2553,128 @@ input, select, textarea {
 			cursor: default;
 		}
 
+/* Button for the thumb*/
+
+input[type="submit"],
+input[type="reset"],
+input[type="button_thumb"],
+.button_thumb {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	border-radius: 0.35em;
+	border: solid 3px #efefef;
+	color: #787878 !important;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 200;
+	height: 2.15em;
+	height: calc(1.75em + 6px);
+	line-height: 1.75em;
+	min-width: 10em;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button_thumb"]:hover,
+	.button_thumb:hover {
+		border-color: #49bf9d;
+		color: #49bf9d !important;
+	}
+
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button_thumb"]:active,
+	.button_thumb:active {
+		background-color: rgba(73, 191, 157, 0.1);
+		border-color: #49bf9d;
+		color: #49bf9d !important;
+	}
+
+	input[type="submit"].icon,
+	input[type="reset"].icon,
+	input[type="button_thumb"].icon,
+	.button_thumb.icon {
+		padding-left: 1.35em;
+	}
+
+		input[type="submit"].icon:before,
+		input[type="reset"].icon:before,
+		input[type="button_thumb"].icon:before,
+		.button_thumb.icon:before {
+			margin-right: 0.5em;
+		}
+
+	input[type="submit"].fit,
+	input[type="reset"].fit,
+	input[type="button"].fit,
+	.button_thumb.fit {
+		min-width: 0;
+		width: 100%;
+	}
+
+	input[type="submit"].small,
+	input[type="reset"].small,
+	input[type="button_thumb"].small,
+	.button_thumb.small {
+		font-size: 0.8em;
+	}
+
+	input[type="submit"].large,
+	input[type="reset"].large,
+	input[type="button_thumb"].large,
+	.button_thumb.large {
+		font-size: 1.35em;
+	}
+
+	input[type="submit"].primary,
+	input[type="reset"].primary,
+	input[type="button_thumb"].primary,
+	.button_thumb.primary {
+		background-color: #49bf9d;
+		border-color: #49bf9d;
+		color: #ffffff !important;
+	}
+
+		input[type="submit"].primary:hover,
+		input[type="reset"].primary:hover,
+		input[type="button_thumb"].primary:hover,
+		.button_thumb.primary:hover {
+			background-color: #5cc6a7;
+			border-color: #5cc6a7;
+		}
+
+		input[type="submit"].primary:active,
+		input[type="reset"].primary:active,
+		input[type="button_thumb"].primary:active,
+		.button_thumb.primary:active {
+			background-color: #3eb08f;
+			border-color: #3eb08f;
+		}
+
+	input[type="submit"].disabled, input[type="submit"]:disabled,
+	input[type="reset"].disabled,
+	input[type="reset"]:disabled,
+	input[type="button_thumb"].disabled,
+	input[type="button_thumb"]:disabled,
+	.button_thumb.disabled,
+	.button_thumb:disabled {
+		background-color: #e7e7e7 !important;
+		border-color: #e7e7e7 !important;
+		color: #b2b2b2 !important;
+		cursor: default;
+	}
+
 /* Work Item */
 
 	.work-item {
@@ -2593,13 +2717,15 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
+		background-image: url("images/overlay.png"), url("../../images/my_files/background_01.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
+		/* padding: 8em 4em; */
 		padding: 8em 4em;
 		position: fixed;
 		text-align: right;
@@ -2632,7 +2758,8 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: #ffffff;
+			/* color: rgba(255, 255, 255, 0.5); */
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2640,7 +2767,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 8.25em;
 		}
 
 /* Footer */
@@ -2895,7 +3022,8 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-			color: #fff;
+			/* color: #fff; */
+			color: #000000;
 			height: 4em;
 			line-height: 4em;
 			opacity: 0;
