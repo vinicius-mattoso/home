@@ -2099,6 +2099,16 @@ input, select, textarea {
 				opacity: 1.0;
 			}
 
+			.image.thumb.no-hover:hover:after {
+				opacity: 0 !important; /* Remove o texto "Preview" */
+				content: '' !important;
+			}
+			
+			.image.thumb.no-hover:hover:before {
+				opacity: 0 !important; /* Remove a sobreposição no hover */
+				background: none !important;
+			}
+
 		.image img {
 			border-radius: 0.35em;
 			display: block;
