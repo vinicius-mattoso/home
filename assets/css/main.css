@@ -2099,14 +2099,25 @@ input, select, textarea {
 				opacity: 1.0;
 			}
 
-			.image.thumb.no-hover:hover:after {
-				opacity: 0 !important; /* Remove o texto "Preview" */
+			/* Removendo a película e o hover quando a classe .no-hover estiver presente */
+			.image.thumb.no-hover:before {
+				opacity: 0 !important;
+				background: none !important;
+			}
+
+			.image.thumb.no-hover:after {
+				opacity: 0 !important;
 				content: '' !important;
 			}
-			
+
 			.image.thumb.no-hover:hover:before {
-				opacity: 0 !important; /* Remove a sobreposição no hover */
+				opacity: 0 !important;
 				background: none !important;
+			}
+
+			.image.thumb.no-hover:hover:after {
+				opacity: 0 !important;
+				content: '' !important;
 			}
 
 		.image img {
