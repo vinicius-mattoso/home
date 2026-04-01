@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vinicius Mattoso | Data Scientist",
-    "description": "Portfolio of Vinicius Mattoso, Data Scientist focused on AI, Machine Learning, Optimization and Generative AI."
+    "description": "Portfolio of Vinicius Mattoso, a data scientist focused on applied AI, optimization, ML systems, and Generative AI."
   },
   "nav": {
     "about": "About",
@@ -14,50 +14,72 @@
     "eyebrow": "Portfolio",
     "title": "Vinicius Mattoso",
     "subtitle": "Data Scientist | AI, Optimization & Generative AI",
-    "description": "Building intelligent solutions for Oil & Gas, Energy, Financial Services, and applied Machine Learning systems.",
+    "description": "This space brings together part of my trajectory in data, AI, modeling, and software, with emphasis on projects, studies, and technical topics I have been working on.",
     "ctaResume": "View Resume",
-    "resumeLink": "resume/vinicius_mattoso_cv_en.pdf",
-    "cardLabel": "Current focus",
+    "resumeLink": "resume/Vinicius%20Mattoso%20CV%20EN.pdf",
+    "cardLabel": "Areas of interest",
+    "metrics": [
+      {
+        "value": "6+ years",
+        "label": "involvement with data and AI projects"
+      },
+      {
+        "value": "Areas of work",
+        "label": "ML, computational modeling, optimization, and GenAI"
+      }
+    ],
     "focusItems": [
-      "Machine Learning applied to real business problems",
+      "Machine Learning applied to real problems",
+      "Computational modeling and analysis of complex problems",
       "Generative AI, LLMs, and RAG architectures",
       "GraphRAG with textual and tabular data",
-      "Optimization, MLOps, and scalable AI solutions"
+      "FastAPI, MLOps, and scalable solutions"
     ]
   },
   "about": {
     "kicker": "About",
     "title": "Who I am",
-    "description": "I am a Data Scientist with experience in Artificial Intelligence, Machine Learning, Optimization, and business-oriented applications. I work on end-to-end solutions, connecting problem framing, data structuring, modeling, and implementation. My background in Mechanical Engineering with emphasis on Petroleum and Energy strengthens my work on complex problems, especially in Oil & Gas, Energy, and highly technical environments."
+    "description": "I am a Data Scientist with a background in Mechanical Engineering and a trajectory shaped by technically demanding problems. My work combines applied research, engineering, and software development across stages such as data structuring, modeling, experimentation, and implementation. I am especially interested in Oil & Gas, Energy, optimization, Machine Learning systems, and recent applications of generative AI.",
+    "cardTitle": "Interests",
+    "points": [
+      "Projects that combine computational modeling, data, and software development.",
+      "Technical problems that require structured analysis, experimentation, and implementation.",
+      "Continuous growth in applied AI, optimization, and analytical systems."
+    ]
   },
   "projects": {
     "kicker": "Projects",
-    "title": "Featured Projects",
+    "title": "Featured projects",
+    "description": "A selection of repositories and studies that help show my technical repertoire and areas of interest.",
     "items": [
       {
         "title": "LearningHub",
-        "description": "Central repository for studies and projects in Python, Data Science, Machine Learning, and AI.",
+        "description": "Central hub for Python, Data Science, Machine Learning, and AI studies and projects, organized for continuous growth.",
+        "highlight": "A base for study and technical organization.",
         "tags": ["Python", "ML", "AI", "Education"],
         "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
         "demoUrl": ""
       },
       {
         "title": "AI-Agentes-Study",
-        "description": "Exploration of agents, LLMs, LangChain, and modern AI architectures.",
+        "description": "Hands-on exploration of agents, LLMs, LangChain, and modern architectures for intelligent systems.",
+        "highlight": "Study around agents and recent architectures.",
         "tags": ["LLMs", "LangChain", "Agents", "GenAI"],
         "repoUrl": "https://github.com/vinicius-mattoso/AI-Agentes-Study",
         "demoUrl": ""
       },
       {
         "title": "MLflow Part 1",
-        "description": "Foundations of experiment tracking with MLflow applied to Machine Learning.",
+        "description": "Structured introduction to experiment tracking with MLflow in Machine Learning workflows.",
+        "highlight": "A first layer of study in MLOps.",
         "tags": ["MLflow", "MLOps", "Experiment Tracking"],
         "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part1",
         "demoUrl": ""
       },
       {
         "title": "MLflow Part 2",
-        "description": "More advanced architecture with tracking server and experiment organization.",
+        "description": "Extension of the study with a tracking server, environment organization, and a more mature architecture.",
+        "highlight": "Continuation of the study with a fuller setup.",
         "tags": ["MLflow", "Tracking Server", "MLOps"],
         "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part2",
         "demoUrl": ""
@@ -66,7 +88,8 @@
   },
   "focus": {
     "kicker": "Expertise",
-    "title": "Technical Focus",
+    "title": "Technical focus",
+    "description": "Tools, domains, and technical fronts that appear most often across my projects and studies.",
     "items": [
       "Machine Learning",
       "Generative AI",
@@ -82,29 +105,29 @@
   },
   "experience": {
     "kicker": "Experience",
-    "title": "Career Highlights",
+    "title": "Career highlights",
     "items": [
       {
-        "period": "2025 — Present",
+        "period": "2025 - Present",
         "role": "Data Scientist | Capco",
-        "description": "Design and development of AI solutions aligned with business challenges, focused on Machine Learning, Optimization, Generative AI, and applications for Financial Services, Insurance, Logistics, and Oil & Gas."
+        "description": "At Capco, I have been working on AI solutions aligned with business challenges, focused on Machine Learning, Optimization, Generative AI, and applications for sectors such as Financial Services, Insurance, Logistics, and Oil & Gas."
       },
       {
-        "period": "2024 — 2025",
+        "period": "2024 - 2025",
         "role": "Data Science Researcher | ICA PUC-Rio",
-        "description": "Worked on FastAPI applications, tools for on-premises and cloud environments, analytical visualizations, and classification models."
+        "description": "At ICA PUC-Rio, I worked on FastAPI applications, tools for on-premises and cloud environments, analytical visualizations, and classification models."
       },
       {
-        "period": "2019 — 2024",
+        "period": "2019 - 2024",
         "role": "Computational Modeling and Optimization | LMMP PUC-Rio",
-        "description": "Projects in reservoir simulation, uncertainty analysis, optimization, and Oil & Gas applications, including work with Petrobras and Chevron."
+        "description": "At LMMP PUC-Rio, I worked on reservoir simulation, uncertainty analysis, optimization, and Oil & Gas projects, including initiatives developed with Petrobras and Chevron."
       }
     ]
   },
   "contact": {
     "kicker": "Contact",
-    "title": "Let’s connect",
-    "description": "If you would like to discuss AI, Machine Learning, GenAI, Oil & Gas, or applied projects, feel free to reach out."
+    "title": "Contact",
+    "description": "If you want to exchange ideas about applied AI, Machine Learning, LLM systems, or technical projects, feel free to reach out."
   },
   "footer": {
     "text": "Personal portfolio and project showcase."

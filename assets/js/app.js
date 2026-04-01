@@ -44,11 +44,30 @@ function setTextContent(data) {
     }
   }
 
-  renderHeroFocus(data.hero.focusItems);
-  renderProjects(data.projects.items);
-  renderFocus(data.focus.items);
-  renderExperience(data.experience.items);
+  renderHeroMetrics(data.hero.metrics || []);
+  renderHeroFocus(data.hero.focusItems || []);
+  renderAboutPoints(data.about.points || []);
+  renderProjects(data.projects.items || []);
+  renderFocus(data.focus.items || []);
+  renderExperience(data.experience.items || []);
   updateActiveLanguageButton();
+}
+
+function renderHeroMetrics(items) {
+  const container = document.getElementById("hero-metrics");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  items.forEach((item) => {
+    const article = document.createElement("article");
+    article.className = "metric-card";
+    article.innerHTML = `
+      <strong>${item.value}</strong>
+      <span>${item.label}</span>
+    `;
+    container.appendChild(article);
+  });
 }
 
 function renderHeroFocus(items) {
@@ -56,6 +75,21 @@ function renderHeroFocus(items) {
   if (!list) return;
 
   list.innerHTML = "";
+
+  items.forEach((item) => {
+    const article = document.createElement("article");
+    article.className = "signal-item";
+    article.innerHTML = `<p>${item}</p>`;
+    list.appendChild(article);
+  });
+}
+
+function renderAboutPoints(items) {
+  const list = document.getElementById("about-points");
+  if (!list) return;
+
+  list.innerHTML = "";
+
   items.forEach((item) => {
     const li = document.createElement("li");
     li.textContent = item;
@@ -69,7 +103,7 @@ function renderProjects(items) {
 
   grid.innerHTML = "";
 
-  items.forEach((project) => {
+  items.forEach((project, index) => {
     const card = document.createElement("article");
     card.className = "project-card";
 
@@ -78,6 +112,10 @@ function renderProjects(items) {
       .join("");
 
     card.innerHTML = `
+      <div class="project-card-top">
+        <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
+        <p class="project-highlight">${project.highlight || ""}</p>
+      </div>
       <h4>${project.title}</h4>
       <p>${project.description}</p>
       <div class="project-tags">${tags}</div>

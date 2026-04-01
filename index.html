@@ -6,24 +6,36 @@
   <title>Vinicius Mattoso | Data Scientist</title>
   <meta
     name="description"
-    content="Portfólio de Vinicius Mattoso, cientista de dados com foco em IA, Machine Learning, Otimização e Generative AI."
+    content="Portfólio de Vinicius Mattoso, cientista de dados com foco em IA aplicada, otimização, sistemas de ML e Generative AI."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet"
   />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <div class="page-background" aria-hidden="true"></div>
+  <div class="page-background-overlay" aria-hidden="true"></div>
+  <div class="page-glow page-glow-1" aria-hidden="true"></div>
+  <div class="page-glow page-glow-2" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container nav">
       <a href="#hero" class="brand">Vinicius Mattoso</a>
 
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Navegação principal">
         <a href="#about" data-i18n="nav.about">Sobre</a>
         <a href="#projects" data-i18n="nav.projects">Projetos</a>
-        <a href="#focus" data-i18n="nav.focus">Foco Técnico</a>
+        <a href="#focus" data-i18n="nav.focus">Foco técnico</a>
         <a href="#experience" data-i18n="nav.experience">Experiência</a>
         <a href="#contact" data-i18n="nav.contact">Contato</a>
       </nav>
 
-      <div class="lang-switch">
+      <div class="lang-switch" aria-label="Idioma">
         <button class="lang-btn active" data-lang="pt-BR" type="button">PT</button>
         <button class="lang-btn" data-lang="en" type="button">EN</button>
       </div>
@@ -34,12 +46,27 @@
     <section id="hero" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
+          <div class="hero-intro">
+            <div class="hero-portrait">
+              <img
+                src="assets/img/profile.jpg"
+                alt="Foto de Vinicius Mattoso"
+                class="hero-portrait-image"
+              />
+            </div>
+
+            <div class="hero-intro-copy">
           <p class="eyebrow" data-i18n="hero.eyebrow">Portfólio</p>
           <h1 data-i18n="hero.title">Vinicius Mattoso</h1>
           <h2 data-i18n="hero.subtitle">Data Scientist | AI, Optimization & Generative AI</h2>
+            </div>
+          </div>
+
           <p class="hero-text" data-i18n="hero.description">
             Construindo soluções inteligentes para Oil & Gas, Energia, Financial Services e sistemas aplicados de Machine Learning.
           </p>
+
+          <div id="hero-metrics" class="hero-metrics"></div>
 
           <div class="hero-actions">
             <a
@@ -69,18 +96,10 @@
         </div>
 
         <div class="hero-side">
-          <div class="profile-card">
-            <img
-              src="assets/img/profile.jpg"
-              alt="Foto de Vinicius Mattoso"
-              class="profile-image"
-            />
-          </div>
-
           <div class="hero-card">
             <div class="hero-card-inner">
-              <p class="hero-card-label" data-i18n="hero.cardLabel">Foco atual</p>
-              <ul id="hero-focus-list" class="focus-list"></ul>
+              <p class="hero-card-label" data-i18n="hero.cardLabel">Temas atuais</p>
+              <div id="hero-focus-list" class="signal-list"></div>
             </div>
           </div>
         </div>
@@ -93,7 +112,14 @@
           <p class="section-kicker" data-i18n="about.kicker">Sobre</p>
           <h3 data-i18n="about.title">Quem sou eu</h3>
         </div>
-        <p class="section-text" data-i18n="about.description"></p>
+
+        <div class="about-layout">
+          <p class="section-text" data-i18n="about.description"></p>
+          <div class="about-card">
+            <p class="about-card-kicker" data-i18n="about.cardTitle">Interesses</p>
+            <ul id="about-points" class="about-points"></ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -102,6 +128,9 @@
         <div class="section-heading">
           <p class="section-kicker" data-i18n="projects.kicker">Projetos</p>
           <h3 data-i18n="projects.title">Projetos em destaque</h3>
+          <p class="section-support" data-i18n="projects.description">
+            Seleção de projetos, estudos e experimentos que ajudam a mostrar minha trajetória técnica.
+          </p>
         </div>
         <div id="projects-grid" class="projects-grid"></div>
       </div>
@@ -112,6 +141,9 @@
         <div class="section-heading">
           <p class="section-kicker" data-i18n="focus.kicker">Especialidades</p>
           <h3 data-i18n="focus.title">Foco técnico</h3>
+          <p class="section-support" data-i18n="focus.description">
+            Áreas onde concentro estudo contínuo e prática.
+          </p>
         </div>
         <div id="focus-grid" class="chips-grid"></div>
       </div>
@@ -131,9 +163,9 @@
       <div class="container contact-box">
         <div>
           <p class="section-kicker" data-i18n="contact.kicker">Contato</p>
-          <h3 data-i18n="contact.title">Vamos conversar</h3>
-          <p data-i18n="contact.description">
-            Se quiser trocar ideias sobre IA, Machine Learning, GenAI, Oil & Gas ou projetos aplicados, entre em contato.
+          <h3 data-i18n="contact.title">Contato</h3>
+          <p class="contact-text" data-i18n="contact.description">
+            Se quiser trocar ideias sobre IA, Machine Learning, GenAI, Oil & Gas ou projetos técnicos, entre em contato.
           </p>
         </div>
 

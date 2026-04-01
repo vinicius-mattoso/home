@@ -1,12 +1,12 @@
 {
   "meta": {
     "title": "Vinicius Mattoso | Data Scientist",
-    "description": "Portfólio de Vinicius Mattoso, cientista de dados com foco em IA, Machine Learning, Otimização e Generative AI."
+    "description": "Portfólio de Vinicius Mattoso, cientista de dados com foco em IA aplicada, otimização, sistemas de ML e Generative AI."
   },
   "nav": {
     "about": "Sobre",
     "projects": "Projetos",
-    "focus": "Foco Técnico",
+    "focus": "Foco técnico",
     "experience": "Experiência",
     "contact": "Contato"
   },
@@ -14,50 +14,72 @@
     "eyebrow": "Portfólio",
     "title": "Vinicius Mattoso",
     "subtitle": "Data Scientist | AI, Optimization & Generative AI",
-    "description": "Construindo soluções inteligentes para Oil & Gas, Energia, Financial Services e sistemas aplicados de Machine Learning.",
+    "description": "Este espaço reúne parte da minha trajetória em dados, IA, modelagem e software, com foco em projetos, estudos e temas técnicos que venho desenvolvendo.",
     "ctaResume": "Ver CV",
-    "resumeLink": "resume/vinicius_mattoso_cv_pt.pdf",
-    "cardLabel": "Foco atual",
+    "resumeLink": "resume/Vinicius%20Mattoso%20CV%20PT.pdf",
+    "cardLabel": "Áreas de interesse",
+    "metrics": [
+      {
+        "value": "+6 anos",
+        "label": "de envolvimento com projetos de dados e IA"
+      },
+      {
+        "value": "Eixos de atuação",
+        "label": "ML, modelagem computacional, otimização e GenAI"
+      }
+    ],
     "focusItems": [
       "Machine Learning aplicado a problemas reais",
+      "Modelagem computacional e análise de problemas complexos",
       "Generative AI, LLMs e arquiteturas RAG",
       "GraphRAG com dados textuais e tabulares",
-      "Otimização, MLOps e soluções escaláveis"
+      "FastAPI, MLOps e soluções escaláveis"
     ]
   },
   "about": {
     "kicker": "Sobre",
     "title": "Quem sou eu",
-    "description": "Sou Cientista de Dados com experiência em Inteligência Artificial, Machine Learning, Otimização e aplicações orientadas a negócio. Atuo no desenvolvimento de soluções ponta a ponta, conectando entendimento do problema, estruturação de dados, modelagem e implementação. Tenho background em Engenharia Mecânica com ênfase em Petróleo e Energia, o que fortalece minha atuação em problemas complexos, especialmente em Oil & Gas, Energia e contextos de alta exigência técnica."
+    "description": "Sou Cientista de Dados com formação em Engenharia Mecânica e uma trajetória construída em torno de problemas de alta complexidade técnica. Minha atuação combina pesquisa aplicada, engenharia e desenvolvimento de software, passando por etapas como estruturação de dados, modelagem, experimentação e implementação. Tenho especial interesse por problemas em Oil & Gas, Energia, otimização, sistemas de Machine Learning e aplicações recentes de IA generativa.",
+    "cardTitle": "Interesses",
+    "points": [
+      "Projetos que combinam modelagem computacional, dados e desenvolvimento de software.",
+      "Problemas técnicos que exigem análise estruturada, experimentação e implementação.",
+      "Evolução contínua em IA aplicada, otimização e sistemas analíticos."
+    ]
   },
   "projects": {
     "kicker": "Projetos",
     "title": "Projetos em destaque",
+    "description": "Uma seleção de repositórios e estudos que ajudam a mostrar meu repertório técnico e minhas linhas de interesse.",
     "items": [
       {
         "title": "LearningHub",
-        "description": "Repositório central de estudos e projetos em Python, Data Science, Machine Learning e AI.",
+        "description": "Hub central para estudos e projetos em Python, Data Science, Machine Learning e AI, organizado para evolução contínua.",
+        "highlight": "Base de estudo e organização técnica.",
         "tags": ["Python", "ML", "AI", "Education"],
         "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
         "demoUrl": ""
       },
       {
         "title": "AI-Agentes-Study",
-        "description": "Exploração de agentes, LLMs, LangChain e arquiteturas modernas de IA.",
+        "description": "Exploração prática de agentes, LLMs, LangChain e arquiteturas modernas para sistemas inteligentes.",
+        "highlight": "Estudo de agentes e arquiteturas recentes.",
         "tags": ["LLMs", "LangChain", "Agents", "GenAI"],
         "repoUrl": "https://github.com/vinicius-mattoso/AI-Agentes-Study",
         "demoUrl": ""
       },
       {
         "title": "MLflow Part 1",
-        "description": "Fundamentos de experiment tracking com MLflow aplicados a Machine Learning.",
+        "description": "Introdução estruturada a tracking de experimentos com MLflow em fluxos de Machine Learning.",
+        "highlight": "Primeira camada de estudo em MLOps.",
         "tags": ["MLflow", "MLOps", "Experiment Tracking"],
         "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part1",
         "demoUrl": ""
       },
       {
         "title": "MLflow Part 2",
-        "description": "Arquitetura mais avançada com tracking server e organização de experimentos.",
+        "description": "Extensão do estudo com tracking server, organização de ambientes e arquitetura mais madura.",
+        "highlight": "Continuação do estudo com arquitetura mais completa.",
         "tags": ["MLflow", "Tracking Server", "MLOps"],
         "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part2",
         "demoUrl": ""
@@ -67,6 +89,7 @@
   "focus": {
     "kicker": "Especialidades",
     "title": "Foco técnico",
+    "description": "Ferramentas, domínios e frentes técnicas que aparecem com mais frequência nos projetos e estudos.",
     "items": [
       "Machine Learning",
       "Generative AI",
@@ -85,26 +108,26 @@
     "title": "Destaques da trajetória",
     "items": [
       {
-        "period": "2025 — Atual",
+        "period": "2025 - Atual",
         "role": "Data Scientist | Capco",
-        "description": "Desenvolvimento de soluções de IA alinhadas a desafios de negócio, com foco em Machine Learning, Optimization, Generative AI e aplicações para setores como Financial Services, Insurance, Logistics e Oil & Gas."
+        "description": "Na Capco, venho atuando no desenvolvimento de soluções de IA alinhadas a desafios de negócio, com foco em Machine Learning, Optimization, Generative AI e aplicações para setores como Financial Services, Insurance, Logistics e Oil & Gas."
       },
       {
-        "period": "2024 — 2025",
+        "period": "2024 - 2025",
         "role": "Pesquisador em Ciência de Dados | ICA PUC-Rio",
-        "description": "Atuação no desenvolvimento de aplicações FastAPI, ferramentas para ambientes on-premises e cloud, visualizações analíticas e modelos de classificação."
+        "description": "No ICA PUC-Rio, atuei no desenvolvimento de aplicações FastAPI, ferramentas para ambientes on-premises e cloud, visualizações analíticas e modelos de classificação."
       },
       {
-        "period": "2019 — 2024",
+        "period": "2019 - 2024",
         "role": "Modelagem Computacional e Otimização | LMMP PUC-Rio",
-        "description": "Projetos em simulação de reservatórios, análise de incerteza, otimização e aplicações em Oil & Gas, incluindo trabalhos em parceria com Petrobras e Chevron."
+        "description": "No LMMP PUC-Rio, trabalhei em projetos de simulação de reservatórios, análise de incerteza, otimização e aplicações em Oil & Gas, incluindo iniciativas desenvolvidas em parceria com Petrobras e Chevron."
       }
     ]
   },
   "contact": {
     "kicker": "Contato",
-    "title": "Vamos conversar",
-    "description": "Se quiser trocar ideias sobre IA, Machine Learning, GenAI, Oil & Gas ou projetos aplicados, entre em contato."
+    "title": "Contato",
+    "description": "Se quiser trocar ideias sobre IA aplicada, Machine Learning, sistemas com LLMs ou projetos técnicos, estou disponível para conversar."
   },
   "footer": {
     "text": "Portfólio pessoal e vitrine de projetos."
