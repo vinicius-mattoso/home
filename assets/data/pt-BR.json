@@ -11,17 +11,18 @@
     "contact": "Contato"
   },
   "hero": {
-    "eyebrow": "Portfólio",
-    "title": "Vinicius Mattoso",
-    "subtitle": "Data Scientist | AI, Optimization & Generative AI",
-    "description": "Este espaço reúne parte da minha trajetória em dados, IA, modelagem e software, com foco em projetos, estudos e temas técnicos que venho desenvolvendo.",
+    "eyebrow": "Vinicius Mattoso",
+    "title": "Construindo soluções de IA que transformam dados complexos em decisões de negócio.",
+    "subtitle": "IA aplicada, otimização, GenAI e analytics para Oil & Gas e Energy.",
+    "description": "Cientista de Dados com base em modelagem computacional, Machine Learning e desenvolvimento de soluções analíticas. Este espaço reúne projetos, estudos e frentes técnicas que refletem minha atuação em IA aplicada.",
     "ctaResume": "Ver CV",
     "resumeLink": "resume/Vinicius%20Mattoso%20CV%20PT.pdf",
     "cardLabel": "Áreas de interesse",
+    "cardDescription": "Temas, arquiteturas e frentes técnicas que têm concentrado meu estudo e minha prática recente.",
     "metrics": [
       {
         "value": "+6 anos",
-        "label": "de envolvimento com projetos de dados e IA"
+        "label": "envolvido com projetos de dados, modelagem e IA"
       },
       {
         "value": "Eixos de atuação",
@@ -55,7 +56,7 @@
       {
         "title": "LearningHub",
         "description": "Hub central para estudos e projetos em Python, Data Science, Machine Learning e AI, organizado para evolução contínua.",
-        "highlight": "Base de estudo e organização técnica.",
+        "highlight": "Base estruturada para estudo e construção técnica.",
         "tags": ["Python", "ML", "AI", "Education"],
         "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
         "demoUrl": ""
@@ -63,7 +64,7 @@
       {
         "title": "AI-Agentes-Study",
         "description": "Exploração prática de agentes, LLMs, LangChain e arquiteturas modernas para sistemas inteligentes.",
-        "highlight": "Estudo de agentes e arquiteturas recentes.",
+        "highlight": "Estudo aplicado de agentes, pipelines e padrões de GenAI.",
         "tags": ["LLMs", "LangChain", "Agents", "GenAI"],
         "repoUrl": "https://github.com/vinicius-mattoso/AI-Agentes-Study",
         "demoUrl": ""
@@ -71,7 +72,7 @@
       {
         "title": "MLflow Part 1",
         "description": "Introdução estruturada a tracking de experimentos com MLflow em fluxos de Machine Learning.",
-        "highlight": "Primeira camada de estudo em MLOps.",
+        "highlight": "Primeira camada de organização experimental com visão de MLOps.",
         "tags": ["MLflow", "MLOps", "Experiment Tracking"],
         "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part1",
         "demoUrl": ""
@@ -79,7 +80,7 @@
       {
         "title": "MLflow Part 2",
         "description": "Extensão do estudo com tracking server, organização de ambientes e arquitetura mais madura.",
-        "highlight": "Continuação do estudo com arquitetura mais completa.",
+        "highlight": "Evolução para uma arquitetura mais robusta no ciclo de ML.",
         "tags": ["MLflow", "Tracking Server", "MLOps"],
         "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part2",
         "demoUrl": ""

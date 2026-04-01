@@ -1,8 +1,20 @@
 const DEFAULT_LANG = "pt-BR";
 let currentLang = localStorage.getItem("site-lang") || DEFAULT_LANG;
 
+function resolveAppUrl(path) {
+  return new URL(path, document.baseURI).toString();
+}
+
+function resolveMaybeExternalUrl(path) {
+  if (!path) return "";
+  if (/^(https?:|mailto:|tel:)/i.test(path)) {
+    return path;
+  }
+  return resolveAppUrl(path);
+}
+
 async function loadTranslations(lang) {
-  const response = await fetch(`assets/data/${lang}.json`);
+  const response = await fetch(resolveAppUrl(`assets/data/${lang}.json`));
   if (!response.ok) {
     throw new Error(`Failed to load translations for ${lang}`);
   }
@@ -34,7 +46,7 @@ function setTextContent(data) {
   const resumeLink = document.getElementById("resume-link");
   if (resumeLink) {
     if (data.hero.resumeLink && data.hero.resumeLink.trim() !== "") {
-      resumeLink.setAttribute("href", data.hero.resumeLink);
+      resumeLink.setAttribute("href", resolveMaybeExternalUrl(data.hero.resumeLink));
       resumeLink.classList.remove("btn-disabled");
       resumeLink.removeAttribute("aria-disabled");
     } else {
@@ -111,6 +123,9 @@ function renderProjects(items) {
       .map((tag) => `<span class="project-tag">${tag}</span>`)
       .join("");
 
+    const repoUrl = resolveMaybeExternalUrl(project.repoUrl);
+    const demoUrl = resolveMaybeExternalUrl(project.demoUrl);
+
     card.innerHTML = `
       <div class="project-card-top">
         <span class="project-index">${String(index + 1).padStart(2, "0")}</span>
@@ -120,8 +135,8 @@ function renderProjects(items) {
       <p>${project.description}</p>
       <div class="project-tags">${tags}</div>
       <div class="project-links">
-        <a href="${project.repoUrl}" target="_blank" rel="noopener">GitHub</a>
-        ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" rel="noopener">Demo</a>` : ""}
+        <a href="${repoUrl}" target="_blank" rel="noopener">GitHub</a>
+        ${demoUrl ? `<a href="${demoUrl}" target="_blank" rel="noopener">Demo</a>` : ""}
       </div>
     `;
 
