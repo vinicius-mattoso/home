@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Vinicius Mattoso | Data Scientist",
+    "description": "Portfólio de Vinicius Mattoso, cientista de dados com foco em IA, Machine Learning, Otimização e Generative AI."
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "focus": "Foco Técnico",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "hero": {
+    "eyebrow": "Portfólio",
+    "title": "Vinicius Mattoso",
+    "subtitle": "Data Scientist | AI, Optimization & Generative AI",
+    "description": "Construindo soluções inteligentes para Oil & Gas, Energia, Financial Services e sistemas aplicados de Machine Learning.",
+    "ctaResume": "Ver CV",
+    "resumeLink": "resume/vinicius_mattoso_cv_pt.pdf",
+    "cardLabel": "Foco atual",
+    "focusItems": [
+      "Machine Learning aplicado a problemas reais",
+      "Generative AI, LLMs e arquiteturas RAG",
+      "GraphRAG com dados textuais e tabulares",
+      "Otimização, MLOps e soluções escaláveis"
+    ]
+  },
+  "about": {
+    "kicker": "Sobre",
+    "title": "Quem sou eu",
+    "description": "Sou Cientista de Dados com experiência em Inteligência Artificial, Machine Learning, Otimização e aplicações orientadas a negócio. Atuo no desenvolvimento de soluções ponta a ponta, conectando entendimento do problema, estruturação de dados, modelagem e implementação. Tenho background em Engenharia Mecânica com ênfase em Petróleo e Energia, o que fortalece minha atuação em problemas complexos, especialmente em Oil & Gas, Energia e contextos de alta exigência técnica."
+  },
+  "projects": {
+    "kicker": "Projetos",
+    "title": "Projetos em destaque",
+    "items": [
+      {
+        "title": "LearningHub",
+        "description": "Repositório central de estudos e projetos em Python, Data Science, Machine Learning e AI.",
+        "tags": ["Python", "ML", "AI", "Education"],
+        "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
+        "demoUrl": ""
+      },
+      {
+        "title": "AI-Agentes-Study",
+        "description": "Exploração de agentes, LLMs, LangChain e arquiteturas modernas de IA.",
+        "tags": ["LLMs", "LangChain", "Agents", "GenAI"],
+        "repoUrl": "https://github.com/vinicius-mattoso/AI-Agentes-Study",
+        "demoUrl": ""
+      },
+      {
+        "title": "MLflow Part 1",
+        "description": "Fundamentos de experiment tracking com MLflow aplicados a Machine Learning.",
+        "tags": ["MLflow", "MLOps", "Experiment Tracking"],
+        "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part1",
+        "demoUrl": ""
+      },
+      {
+        "title": "MLflow Part 2",
+        "description": "Arquitetura mais avançada com tracking server e organização de experimentos.",
+        "tags": ["MLflow", "Tracking Server", "MLOps"],
+        "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part2",
+        "demoUrl": ""
+      }
+    ]
+  },
+  "focus": {
+    "kicker": "Especialidades",
+    "title": "Foco técnico",
+    "items": [
+      "Machine Learning",
+      "Generative AI",
+      "GraphRAG",
+      "Optimization",
+      "Oil & Gas Analytics",
+      "MLOps",
+      "FastAPI",
+      "LangChain",
+      "Python",
+      "AWS / Azure"
+    ]
+  },
+  "experience": {
+    "kicker": "Experiência",
+    "title": "Destaques da trajetória",
+    "items": [
+      {
+        "period": "2025 — Atual",
+        "role": "Data Scientist | Capco",
+        "description": "Desenvolvimento de soluções de IA alinhadas a desafios de negócio, com foco em Machine Learning, Optimization, Generative AI e aplicações para setores como Financial Services, Insurance, Logistics e Oil & Gas."
+      },
+      {
+        "period": "2024 — 2025",
+        "role": "Pesquisador em Ciência de Dados | ICA PUC-Rio",
+        "description": "Atuação no desenvolvimento de aplicações FastAPI, ferramentas para ambientes on-premises e cloud, visualizações analíticas e modelos de classificação."
+      },
+      {
+        "period": "2019 — 2024",
+        "role": "Modelagem Computacional e Otimização | LMMP PUC-Rio",
+        "description": "Projetos em simulação de reservatórios, análise de incerteza, otimização e aplicações em Oil & Gas, incluindo trabalhos em parceria com Petrobras e Chevron."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contato",
+    "title": "Vamos conversar",
+    "description": "Se quiser trocar ideias sobre IA, Machine Learning, GenAI, Oil & Gas ou projetos aplicados, entre em contato."
+  },
+  "footer": {
+    "text": "Portfólio pessoal e vitrine de projetos."
+  }
+}
