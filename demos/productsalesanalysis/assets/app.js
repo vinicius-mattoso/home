@@ -42,11 +42,12 @@ function getCtx(id) {
   const canvas = document.getElementById(id);
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
+  const cssHeight = rect.height || Number(canvas.getAttribute("height"));
   canvas.width = Math.max(1, Math.floor(rect.width * dpr));
-  canvas.height = Math.max(1, Math.floor(Number(canvas.getAttribute("height")) * dpr));
+  canvas.height = Math.max(1, Math.floor(cssHeight * dpr));
   const ctx = canvas.getContext("2d");
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  return { canvas, ctx, width: rect.width, height: Number(canvas.getAttribute("height")) };
+  return { canvas, ctx, width: rect.width, height: cssHeight };
 }
 
 function clearChart(ctx, width, height) {
