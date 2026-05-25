@@ -54,11 +54,19 @@
     "description": "A selection of repositories and studies that help show my technical repertoire and lines of interest.",
     "items": [
       {
-        "title": "LearningHub",
-        "description": "Central hub for Python, Data Science, Machine Learning, and AI studies and projects, organized for continuous growth.",
-        "highlight": "A structured base for study and technical building.",
-        "tags": ["Python", "ML", "AI", "Education"],
-        "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
+        "title": "industrial-rul-predictive-maintenance",
+        "description": "Predictive maintenance project for estimating remaining useful life in an industrial context, connecting time series, sensor data, and Machine Learning models.",
+        "highlight": "ML applied to operational reliability and maintenance decision-making.",
+        "tags": ["Python", "Machine Learning", "Predictive Maintenance", "RUL", "Time Series"],
+        "repoUrl": "https://github.com/vinicius-mattoso/industrial-rul-predictive-maintenance",
+        "demoUrl": ""
+      },
+      {
+        "title": "ArquiBlog",
+        "description": "Streamlit + LangChain app for generating architecture blog posts from an image and textual descriptions.",
+        "highlight": "GenAI product with a practical interface and user-oriented generation flow.",
+        "tags": ["Streamlit", "LangChain", "OpenAI", "GenAI", "Product"],
+        "repoUrl": "https://github.com/vinicius-mattoso/ArquiBlog",
         "demoUrl": ""
       },
       {
@@ -70,11 +78,19 @@
         "demoUrl": ""
       },
       {
-        "title": "MLflow Part 1",
-        "description": "Structured introduction to experiment tracking with MLflow in Machine Learning workflows.",
-        "highlight": "A first layer of experiment organization with an MLOps mindset.",
-        "tags": ["MLflow", "MLOps", "Experiment Tracking"],
-        "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part1",
+        "title": "churn_project",
+        "description": "Customer churn training project using the Telco dataset, covering analysis, modeling, and classification.",
+        "highlight": "Supervised modeling applied to retention and cancellation risk.",
+        "tags": ["Churn", "Classification", "Jupyter Notebook", "Data Analysis", "ML"],
+        "repoUrl": "https://github.com/vinicius-mattoso/churn_project",
+        "demoUrl": ""
+      },
+      {
+        "title": "LearningHub",
+        "description": "Central hub for Python, Data Science, Machine Learning, and AI studies and projects, organized for continuous growth.",
+        "highlight": "A structured base for study and technical building.",
+        "tags": ["Python", "ML", "AI", "Education"],
+        "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
         "demoUrl": ""
       },
       {
