@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArquiPost Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <p class="eyebrow">Arquitetura + IA</p>
+      <h1 id="product-name">ArquiPost Studio</h1>
+      <p id="brand-tagline">Narrativas elegantes para o escritório de arquitetura</p>
+
+      <div class="info-box">
+        <span>Escritório</span>
+        <strong id="office-name">Vini Escritório de Arquitetura</strong>
+      </div>
+      <div class="info-box">
+        <span>Tom de voz</span>
+        <p id="voice-style">Sofisticada, acolhedora e inspiradora</p>
+      </div>
+      <div class="info-box">
+        <span>Status</span>
+        <p id="key-status">Configure sua OpenAI API Key para gerar conteúdo.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">GitHub Pages</p>
+          <h2>Conteúdo editorial para Blog, Instagram e LinkedIn.</h2>
+          <p>
+            Versão estática do app, preparada para rodar sem servidor. As chaves ficam salvas apenas no navegador em que forem configuradas.
+          </p>
+        </div>
+      </section>
+
+      <nav class="tabs" aria-label="Abas do aplicativo">
+        <button class="tab-button is-active" type="button" data-tab-target="tab-generate">Geração</button>
+        <button class="tab-button" type="button" data-tab-target="tab-history">Histórico</button>
+        <button class="tab-button" type="button" data-tab-target="tab-settings">Configuração</button>
+      </nav>
+
+      <section id="tab-generate" class="tab-panel is-active">
+        <section class="grid">
+          <form id="generation-form" class="card form-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Geração</p>
+                <h3>Novo conteúdo</h3>
+              </div>
+              <span>OpenAI no navegador</span>
+            </div>
+
+            <div id="channel-grid" class="channel-grid"></div>
+
+            <div class="upload-shell">
+              <label for="image-input" class="upload-box">
+                <span>Selecionar imagem</span>
+                <strong>Imagem do projeto</strong>
+                <small>PNG, JPG ou JPEG</small>
+                <em id="selected-file-name">Clique para escolher o arquivo</em>
+              </label>
+              <input id="image-input" name="image" type="file" accept=".png,.jpg,.jpeg" required>
+              <div id="image-preview" class="image-preview is-empty">
+                <span>Preview da imagem</span>
+              </div>
+            </div>
+
+            <div class="stacked-inputs">
+              <label>
+                <span>Frase 1</span>
+                <input name="phrase1" type="text" placeholder="Conceito principal do projeto">
+              </label>
+              <label>
+                <span>Frase 2</span>
+                <input name="phrase2" type="text" placeholder="Materiais, atmosfera ou estilo">
+              </label>
+              <label>
+                <span>Frase 3</span>
+                <input name="phrase3" type="text" placeholder="Público, contexto ou desafio">
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="primary-button" type="submit">Gerar conteúdo</button>
+              <p id="form-status" class="status-text">Pronto para criar uma nova peça editorial.</p>
+            </div>
+          </form>
+
+          <aside class="card compact-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Contexto</p>
+                <h3>Direção atual</h3>
+              </div>
+            </div>
+            <div class="info-box">
+              <span>Persona</span>
+              <p id="persona-summary">Redator especialista em arquitetura de interiores</p>
+            </div>
+            <div class="info-box">
+              <span>Objetivo editorial</span>
+              <p id="objective-summary">Criar conteúdos envolventes que transformem projetos em narrativas desejáveis</p>
+            </div>
+            <button id="load-example" class="secondary-button" type="button">Usar exemplo sem imagem</button>
+          </aside>
+        </section>
+
+        <section class="card result-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Resultado</p>
+              <h3>Texto gerado</h3>
+            </div>
+            <button id="copy-result" class="ghost-button" type="button">Copiar texto</button>
+          </div>
+          <div id="result-meta" class="result-meta">Nenhum conteúdo gerado nesta sessão.</div>
+          <div class="result-preview">
+            <div id="result-image" class="result-image empty-state">
+              A imagem enviada aparecerá aqui junto com o texto.
+            </div>
+            <article id="result-content" class="result-content empty-state">
+              O texto final aparecerá aqui, pronto para revisar e publicar.
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="tab-history" class="tab-panel">
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Histórico local</p>
+              <h3>Últimas gerações</h3>
+            </div>
+            <button id="clear-history" class="ghost-button" type="button">Limpar histórico</button>
+          </div>
+          <div id="history-list" class="history-list"></div>
+        </section>
+      </section>
+
+      <section id="tab-settings" class="tab-panel">
+        <section class="grid settings-grid">
+          <form id="settings-form" class="card form-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Configuração</p>
+                <h3>Chaves e marca</h3>
+              </div>
+            </div>
+
+            <label>
+              <span>OpenAI API Key</span>
+              <input name="openaiApiKey" type="password" autocomplete="off" placeholder="sk-...">
+            </label>
+            <label>
+              <span>Modelo de análise da imagem</span>
+              <input name="visionModel" type="text" value="gpt-4o">
+            </label>
+            <label>
+              <span>Modelo de geração do texto</span>
+              <input name="textModel" type="text" value="gpt-4o-mini">
+            </label>
+            <label>
+              <span>Nome do escritório</span>
+              <input name="officeName" type="text">
+            </label>
+            <label>
+              <span>Tagline</span>
+              <input name="tagline" type="text">
+            </label>
+            <label>
+              <span>Estilo de fala</span>
+              <textarea name="voiceStyle" rows="3"></textarea>
+            </label>
+            <label>
+              <span>Persona</span>
+              <input name="persona" type="text">
+            </label>
+            <label>
+              <span>Objetivo editorial</span>
+              <textarea name="objective" rows="4"></textarea>
+            </label>
+            <label>
+              <span>Canal padrão</span>
+              <select name="defaultChannel"></select>
+            </label>
+
+            <div class="form-actions">
+              <button class="secondary-button" type="submit">Salvar configuração</button>
+              <button id="reset-settings" class="ghost-button" type="button">Restaurar padrão</button>
+            </div>
+            <p id="settings-status" class="status-text">As configurações são salvas no localStorage deste navegador.</p>
+          </form>
+
+          <aside class="card compact-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Atenção</p>
+                <h3>Uso em página pública</h3>
+              </div>
+            </div>
+            <p class="notice">
+              Em GitHub Pages, qualquer chamada à OpenAI sai direto do navegador. A API Key não vai para o repositório, mas fica acessível no dispositivo de quem a informar.
+            </p>
+            <p class="notice">
+              Para uso público com segurança real, o ideal é um backend ou proxy com autenticação.
+            </p>
+          </aside>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

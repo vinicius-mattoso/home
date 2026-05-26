@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "Vinicius Mattoso | Data Scientist",
+    "description": "Portfolio of Vinicius Mattoso, a data scientist focused on applied AI, optimization, ML systems, and Generative AI."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "demos": "Demos",
+    "focus": "Technical Focus",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Vinicius Mattoso",
+    "title": "Applied AI for turning complex data into decisions.",
+    "subtitle": "Applied AI, optimization, GenAI, and Oil & Gas analytics and Energy.",
+    "description": "Data Scientist with a foundation in computational modeling, Machine Learning, and analytical software development. This space brings together projects, studies, and technical directions that reflect my work in applied AI.",
+    "ctaResume": "View Resume",
+    "resumeLink": "resume/Vinicius%20Mattoso%20CV%20EN.pdf",
+    "cardLabel": "Areas of interest",
+    "cardDescription": "Themes, architectures, and technical fronts that have concentrated my recent study and practice.",
+    "metrics": [
+      {
+        "value": "6+ years",
+        "label": "working across data, modeling, and AI projects"
+      },
+      {
+        "value": "Areas of work",
+        "label": "ML, computational modeling, optimization, and GenAI"
+      }
+    ],
+    "focusItems": [
+      "Machine Learning applied to real problems",
+      "Computational modeling and analysis of complex problems",
+      "Generative AI, LLMs, and RAG architectures",
+      "GraphRAG with textual and tabular data",
+      "FastAPI, MLOps, and scalable solutions"
+    ]
+  },
+  "about": {
+    "kicker": "About",
+    "title": "Who I am",
+    "description": "I am a Data Scientist with a background in Mechanical Engineering and a trajectory shaped by technically demanding problems. My work combines applied research, engineering, and software development across stages such as data structuring, modeling, experimentation, and implementation. I am especially interested in Oil & Gas, Energy, optimization, Machine Learning systems, and recent applications of generative AI.",
+    "cardTitle": "Interests",
+    "points": [
+      "Projects that combine computational modeling, data, and software development.",
+      "Technical problems that require structured analysis, experimentation, and implementation.",
+      "Continuous growth in applied AI, optimization, and analytical systems."
+    ]
+  },
+  "projects": {
+    "kicker": "Projects",
+    "title": "Featured projects",
+    "description": "A selection of repositories and studies that help show my technical repertoire and lines of interest.",
+    "items": [
+      {
+        "title": "industrial-rul-predictive-maintenance",
+        "description": "Predictive maintenance project for estimating remaining useful life in an industrial context, connecting time series, sensor data, and Machine Learning models.",
+        "highlight": "ML applied to operational reliability and maintenance decision-making.",
+        "tags": ["Python", "Machine Learning", "Predictive Maintenance", "RUL", "Time Series"],
+        "repoUrl": "https://github.com/vinicius-mattoso/industrial-rul-predictive-maintenance",
+        "demoUrl": ""
+      },
+      {
+        "title": "ArquiBlog",
+        "description": "Streamlit + LangChain app for generating architecture blog posts from an image and textual descriptions.",
+        "highlight": "GenAI product with a practical interface and user-oriented generation flow.",
+        "tags": ["Streamlit", "LangChain", "OpenAI", "GenAI", "Product"],
+        "repoUrl": "https://github.com/vinicius-mattoso/ArquiBlog",
+        "demoUrl": ""
+      },
+      {
+        "title": "AI-Agentes-Study",
+        "description": "Hands-on exploration of agents, LLMs, LangChain, and modern architectures for intelligent systems.",
+        "highlight": "Applied study of agents, pipelines, and GenAI patterns.",
+        "tags": ["LLMs", "LangChain", "Agents", "GenAI"],
+        "repoUrl": "https://github.com/vinicius-mattoso/AI-Agentes-Study",
+        "demoUrl": ""
+      },
+      {
+        "title": "churn_project",
+        "description": "Customer churn training project using the Telco dataset, covering analysis, modeling, and classification.",
+        "highlight": "Supervised modeling applied to retention and cancellation risk.",
+        "tags": ["Churn", "Classification", "Jupyter Notebook", "Data Analysis", "ML"],
+        "repoUrl": "https://github.com/vinicius-mattoso/churn_project",
+        "demoUrl": ""
+      },
+      {
+        "title": "LearningHub",
+        "description": "Central hub for Python, Data Science, Machine Learning, and AI studies and projects, organized for continuous growth.",
+        "highlight": "A structured base for study and technical building.",
+        "tags": ["Python", "ML", "AI", "Education"],
+        "repoUrl": "https://github.com/vinicius-mattoso/LearningHub",
+        "demoUrl": ""
+      },
+      {
+        "title": "MLflow Part 2",
+        "description": "Extension of the study with a tracking server, environment organization, and a more mature architecture.",
+        "highlight": "Progression toward a more robust architecture in the ML lifecycle.",
+        "tags": ["MLflow", "Tracking Server", "MLOps"],
+        "repoUrl": "https://github.com/vinicius-mattoso/MLFlow_part2",
+        "demoUrl": ""
+      }
+    ]
+  },
+  "focus": {
+    "kicker": "Expertise",
+    "title": "Technical focus",
+    "description": "Tools, domains, and technical fronts that appear most often across my projects and studies.",
+    "items": [
+      "Machine Learning",
+      "Generative AI",
+      "GraphRAG",
+      "Optimization",
+      "Oil & Gas Analytics",
+      "MLOps",
+      "FastAPI",
+      "LangChain",
+      "Python",
+      "AWS / Azure"
+    ]
+  },
+  "experience": {
+    "kicker": "Experience",
+    "title": "Career highlights",
+    "items": [
+      {
+        "period": "2025 - Present",
+        "role": "Data Scientist | Capco",
+        "description": "At Capco, I have been working on AI solutions aligned with business challenges, focused on Machine Learning, Optimization, Generative AI, and applications for sectors such as Financial Services, Insurance, Logistics, and Oil & Gas."
+      },
+      {
+        "period": "2024 - 2025",
+        "role": "Data Science Researcher | ICA PUC-Rio",
+        "description": "At ICA PUC-Rio, I worked on FastAPI applications, tools for on-premises and cloud environments, analytical visualizations, and classification models."
+      },
+      {
+        "period": "2019 - 2024",
+        "role": "Computational Modeling and Optimization | LMMP PUC-Rio",
+        "description": "At LMMP PUC-Rio, I worked on reservoir simulation, uncertainty analysis, optimization, and Oil & Gas projects, including initiatives developed with Petrobras and Chevron."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Contact",
+    "description": "If you want to exchange ideas about applied AI, Machine Learning, LLM systems, or technical projects, feel free to reach out."
+  },
+  "footer": {
+    "text": "Personal portfolio and project showcase."
+  }
+}
