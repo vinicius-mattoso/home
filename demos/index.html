@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demos | Vinicius Mattoso</title>
+  <meta
+    name="description"
+    content="Página de demos de Vinicius Mattoso, reunindo versões navegáveis de aplicações e experimentos."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="page-background" aria-hidden="true"></div>
+  <div class="page-background-overlay" aria-hidden="true"></div>
+  <div class="page-glow page-glow-1" aria-hidden="true"></div>
+  <div class="page-glow page-glow-2" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../" class="brand">Vinicius Mattoso</a>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="../#about" data-i18n="nav.about">Sobre</a>
+        <a href="../#projects" data-i18n="nav.projects">Projetos</a>
+        <a href="./" data-i18n="nav.demos">Demos</a>
+        <a href="../#focus" data-i18n="nav.focus">Foco técnico</a>
+        <a href="../#contact" data-i18n="nav.contact">Contato</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Idioma">
+        <button class="lang-btn active" data-lang="pt-BR" type="button">PT</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero demos-hero">
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow" data-i18n="hero.eyebrow">Demos</p>
+              <h1 data-i18n="hero.title">Versões navegáveis de projetos e experimentos.</h1>
+              <h2 data-i18n="hero.subtitle">Um hub para acessar aplicações, protótipos e interfaces publicadas.</h2>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#demo-list" data-i18n="hero.ctaPrimary">Ver demos</a>
+                <a class="btn btn-secondary" href="../" data-i18n="hero.ctaSecondary">Voltar para Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo-list" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="demos.kicker">Demos</p>
+          <h3 data-i18n="demos.title">Escolha uma versão</h3>
+          <p class="section-support" data-i18n="demos.description">
+            Acesse os protótipos e dashboards disponíveis para navegação.
+          </p>
+        </div>
+
+        <div id="demos-grid" class="projects-grid demos-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-box">
+        <div>
+          <p class="section-kicker" data-i18n="contact.kicker">Contato</p>
+          <h3 data-i18n="contact.title">Quer conversar sobre uma demo?</h3>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:vinicius_matt@hotmail.com">vinicius_matt@hotmail.com</a>
+          <a href="https://github.com/vinicius-mattoso" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/vinicius-mattoso/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> Vinicius Mattoso</p>
+      <p data-i18n="footer.text">Portfólio pessoal e vitrine de demos.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/demos.js"></script>
+</body>
+</html>

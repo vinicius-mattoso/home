@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Demos | Vinicius Mattoso",
+    "description": "Página de demos de Vinicius Mattoso, reunindo versões navegáveis de aplicações e experimentos."
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "demos": "Demos",
+    "focus": "Foco técnico",
+    "contact": "Contato"
+  },
+  "hero": {
+    "eyebrow": "Demos",
+    "title": "Versões navegáveis de projetos e experimentos.",
+    "subtitle": "Um hub para acessar aplicações, protótipos e interfaces publicadas.",
+    "ctaPrimary": "Ver demos",
+    "ctaSecondary": "Voltar para Home"
+  },
+  "demos": {
+    "kicker": "Demos",
+    "title": "Escolha uma versão",
+    "description": "Acesse os protótipos e dashboards disponíveis para navegação.",
+    "openLabel": "Abrir demo",
+    "items": [
+      {
+        "title": "Product Sales Analysis",
+        "description": "Dashboard de vendas de produtos com filtros, KPIs, tendências, segmentação e ranking comercial.",
+        "highlight": "Análise comercial interativa.",
+        "tags": ["Dashboard", "Vendas", "KPIs", "JavaScript"],
+        "demoUrl": "productsalesanalysis/",
+        "repoUrl": ""
+      },
+      {
+        "title": "ArquiPost Studio",
+        "description": "Aplicação para gerar conteúdo editorial de arquitetura a partir de imagem, descrições e configurações de marca.",
+        "highlight": "Protótipo GenAI publicado para navegação.",
+        "tags": ["GenAI", "Arquitetura", "Conteúdo", "OpenAI"],
+        "demoUrl": "arquiblog/",
+        "repoUrl": ""
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contato",
+    "title": "Quer conversar sobre uma demo?"
+  },
+  "footer": {
+    "text": "Portfólio pessoal e vitrine de demos."
+  }
+}
