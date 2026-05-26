@@ -8,3 +8,4 @@ https://vinicius-mattoso.github.io/home/
 # List of future projects
 
 * GraphRAG with ontology
+* Logistic
