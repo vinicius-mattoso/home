@@ -38,6 +38,14 @@
         "tags": ["GenAI", "Arquitetura", "Conteúdo", "OpenAI"],
         "demoUrl": "arquiblog/",
         "repoUrl": ""
+      },
+      {
+        "title": "GraphRAG LLM Pattern",
+        "description": "Demo para extrair grafos de conhecimento a partir de texto, visualizar entidades e relacionamentos, e consultar o grafo com LLM.",
+        "highlight": "Padrão GraphRAG com ontologia, extração e consulta.",
+        "tags": ["GraphRAG", "LLM", "Knowledge Graph", "OpenAI", "LangChain", "LangSmith"],
+        "demoUrl": "GraphRAG_LLM_pattern/",
+        "repoUrl": ""
       }
     ]
   },

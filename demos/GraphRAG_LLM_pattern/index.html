@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GraphRAG LLM Pattern</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Static GitHub Pages Demo</p>
+        <h1>GraphRAG LLM Pattern</h1>
+      </div>
+      <div class="header-status" id="configStatus">Config not set</div>
+    </header>
+
+    <main class="shell">
+      <nav class="tabs" aria-label="App sections">
+        <button class="tab-button active" data-tab="config">Config</button>
+        <button class="tab-button" data-tab="ingestion">Ingestion</button>
+        <button class="tab-button" data-tab="query">Query</button>
+      </nav>
+
+      <section class="tab-panel active" id="config">
+        <div class="section-grid">
+          <section class="panel">
+            <h2>Provider Config</h2>
+            <label>
+              OpenAI API key
+              <input id="apiKeyInput" type="password" autocomplete="off" placeholder="sk-..." />
+            </label>
+            <label>
+              Model
+              <input id="modelInput" type="text" value="gpt-5.4-nano" />
+            </label>
+            <label>
+              API base URL
+              <input id="baseUrlInput" type="url" value="https://api.openai.com/v1" />
+            </label>
+            <div class="inline-actions">
+              <button class="primary" id="saveConfigButton">Save config</button>
+              <button id="clearConfigButton">Clear saved config</button>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h2>GitHub Pages Constraint</h2>
+            <p>
+              This app runs entirely in the browser. There is no server and no
+              <code>.env</code>, so credentials must be provided in this tab.
+            </p>
+            <p>
+              The key is only stored in this browser if you click save. For a
+              public demo, prefer a restricted key, a temporary key, or a small
+              proxy service that hides secrets server-side.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="ingestion">
+        <div class="workspace-grid">
+          <section class="panel editor-panel">
+            <div class="panel-header">
+              <h2>Ontology YAML</h2>
+              <button id="renderOntologyButton">Render ontology</button>
+            </div>
+            <textarea id="ontologyInput" spellcheck="false"></textarea>
+          </section>
+
+          <section class="panel editor-panel">
+            <div class="panel-header">
+              <h2>Source Text</h2>
+              <button class="primary" id="runIngestionButton">Run extraction</button>
+            </div>
+            <textarea id="sourceTextInput" spellcheck="true"></textarea>
+          </section>
+        </div>
+
+        <section class="panel graph-panel">
+          <div class="panel-header">
+            <h2>Ontology Graph</h2>
+            <span id="ontologySummary" class="muted">Not rendered yet</span>
+          </div>
+          <div id="ontologyGraph" class="graph-canvas"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Extracted Knowledge Graph</h2>
+            <span id="graphSummary" class="muted">No graph extracted yet</span>
+          </div>
+          <div id="knowledgeGraph" class="graph-canvas"></div>
+          <div class="table-grid">
+            <div>
+              <h3>Nodes</h3>
+              <div id="nodesTable"></div>
+            </div>
+            <div>
+              <h3>Relationships</h3>
+              <div id="relationshipsTable"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="query">
+        <section class="panel">
+          <h2>Ask the Knowledge Graph</h2>
+          <label>
+            Natural language question
+            <input
+              id="questionInput"
+              type="text"
+              value="Where was Albert Einstein born, and which facts support the answer?"
+            />
+          </label>
+          <button class="primary" id="runQueryButton">Ask</button>
+        </section>
+
+        <section class="panel">
+          <h2>Answer</h2>
+          <div id="answerBox" class="answer-box">Run ingestion, then ask a question.</div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h2>Evidence Used</h2>
+            <span id="evidenceSummary" class="muted">No query yet</span>
+          </div>
+          <div class="table-grid">
+            <div>
+              <h3>Nodes Used</h3>
+              <div id="usedNodesTable"></div>
+            </div>
+            <div>
+              <h3>Relationships Used</h3>
+              <div id="usedRelationshipsTable"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel graph-panel">
+          <h2>Answer Subgraph</h2>
+          <div id="subgraph" class="graph-canvas"></div>
+        </section>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
